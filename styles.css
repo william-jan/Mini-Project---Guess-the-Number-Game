@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Title & Text */
+p {
+    margin: 8px 0;
+    text-align: center;
+    color: #cbd5f5;
+}
+
+/* Answer */
+#answer {
+    width: 2.1rem;
+    height: 1.4rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: gray;
+}
+
+#answer.show {
+    background: none;
+}
+
+/* Input */
+#guessInput {
+    width: 120px;
+    padding: 12px 14px;
+    margin: 6px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s, background 0.2s, opacity 0.2s;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#guessButton {
+    background: #38bdf8;
+    color: #020617;
+}
+
+#reset {
+    background: #f97316;
+}
+
+#reset:hover {
+    background: #ea580c;
+}
+
+/* Disabled State */
+button:disabled, #guessInput:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Result & Attempts */
+#result {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* color: #f8fafc; */
+}
+
+#attempts {
+    margin-top: 4px;
+    font-size: 0.95rem;
+    color: #e5e7eb;
+}
+
+/* =======================================
+    Responsive Design
+    =====================================*/
+
+/* Tablet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    #answer {
+        font-size: 2.2;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    #guessInput, button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
