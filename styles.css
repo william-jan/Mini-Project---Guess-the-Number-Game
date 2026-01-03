@@ -16,6 +16,16 @@ body {
     padding: 20px;
 }
 
+#muteBtn {
+    position: absolute;
+    padding: 5px;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #243241;
+}
+
 h1 {
     font-size: 2.2rem;
     margin-bottom: 10px;
@@ -34,17 +44,24 @@ p {
     width: 2.1rem;
     height: 1.4rem;
     border-radius: 5px;
-    border: 1px solid black;
     background: gray;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #f8fafc;
 }
 
 #answer.show {
     background: none;
+    text-align: center;
+    padding-top: 2px;
 }
 
 /* Input */
 #guessInput {
-    width: 120px;
+    width: 140px;
+    height: 50px;
     padding: 12px 14px;
     margin: 6px 0;
     text-align: center;
@@ -54,6 +71,10 @@ p {
     border: none;
     cursor: pointer;
     transition: transform 0.1s, background 0.2s, opacity 0.2s;
+}
+
+button {
+    padding: 2px; 
 }
 
 button:active {
